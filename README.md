@@ -1,1 +1,1 @@
-Solution and code files for IT_2310 Web Programming at Tri-C.
+Solution and code files for IT-2310 Web Programming at Tri-C.
