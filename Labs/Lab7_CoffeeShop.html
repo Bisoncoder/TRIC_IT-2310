@@ -21,11 +21,11 @@
 			grid-template-columns: 1fr;
 			min-height: 100vh;
 		}
-        h1, h2 {
-            font-family: 'Garamond', 'Georgia', cursive;
-            color: chocolate;
+		h1, h2 {
+			font-family: Arial, cursive;
+			color: chocolate;
 			margin-bottom: 10px;
-        }
+		}
 		header {
 			grid-area: header;
 			padding: 20px;
@@ -69,6 +69,20 @@
 			text-align: center;
 			color: saddlebrown;
 			font-weight: bold;
+		}
+
+		@media (max-width: 768px) {
+			nav ul {
+				flex-direction: column;
+				gap: 10px;
+			}
+			.flex-container {
+				flex-direction: column;
+				align-items: stretch;
+			}
+			.flex-item {
+				flex: 0 1 auto;
+			}
 		}
     </style>
 </head>
