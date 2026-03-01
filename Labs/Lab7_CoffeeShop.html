@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 7 - Java Haven</title>
+    <style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+        body {
+			background-color: burlywood;
+			display: grid;
+			grid-template-areas:
+				"header"
+				"nav"
+				"main"
+				"footer";
+			grid-template-columns: 1fr;
+			min-height: 100vh;
+		}
+        h1, h2 {
+            font-family: cursive;
+            color: chocolate;
+			margin-bottom: 10px;
+        }
+		header {
+			grid-area: header;
+			padding: 20px;
+			background-color: #D2B48C;
+		}
+			header p {
+				font-family: cursive;
+				color: saddlebrown;
+			}
+		nav {
+			grid-area: nav;
+			background-color: #8B4513;
+            padding: 15px;
+		}
+		    nav ul {
+			    list-style: none;
+			    display: flex;
+			    gap: 20px;
+		    }
+        main-content {
+            grid-area: main;
+        }
+		footer {
+			grid-area: footer;
+			background-color: #8B4513;
+            text-align: center;
+		}
+		.flex-container {
+			display: flex;
+			flex-flow: row wrap;
+			font-family: 'Trebuchet MS';
+			justify-content: space-evenly;
+		}
+		.flex-item {
+			flex: 0 1 150px;
+			background-color: #D2B48C;
+			padding: 20px;
+			border-radius: 8px;
+			background-color: wheat;
+			text-align: center;
+			color: saddlebrown;
+			font-weight: bold;
+		}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Java Haven</h1>
+        <p>Your daily dose of caffeine and comfort.</p>
+    </header>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <h2>Featured Coffees</h2>
+        <div class="flex-container">
+            <div class="flex-item">Espresso</div>
+            <div class="flex-item">Cappuccino</div>
+            <div class="flex-item">Latte</div>
+            <div class="flex-item">Mocha</div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p style="color: black; font-family: Arial;">&copy; 2025 Java Haven. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
